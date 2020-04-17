@@ -3,6 +3,26 @@ templates:
     compute_policy: ""
     cpu: 2
     deprecated: false
+    description: "50 GB disk, Ubuntu 16.04, Docker-ce 19.03.5, Kubernetes 1.17.2, weave 2.6.0"
+    mem: 2048
+    name: ubuntu-16.04_k8-1.17_weave-2.6.0-50gb
+    revision: 1
+    sha256_ova: f3a709fb37ee612d8e34a7bfbcbc79119ce2391df29c41f12faad571230be7ac
+    source_ova: "http://10.196.50.35/ubuntu-16.04-server-cloudimg-amd64-50gb.ova"
+    source_ova_name: ubuntu-16.04-server-cloudimg-amd64-50gb.ova
+    os: "ubuntu-16.04"
+    docker_version: "19.03.5"
+    kubernetes: "upstream"
+    kubernetes_version: "1.17.2"
+    cni: "weave"
+    cni_version: "2.6.0"
+    upgrade_from:
+      - "ubuntu-16.04_k8-1.16_weave-2.6.0"
+      - "ubuntu-16.04_k8-1.17_weave-2.6.0"
+  -
+    compute_policy: ""
+    cpu: 2
+    deprecated: false
     description: "Ubuntu 16.04, Docker-ce 19.03.5, Kubernetes 1.17.2, weave 2.6.0"
     mem: 2048
     name: ubuntu-16.04_k8-1.17_weave-2.6.0
@@ -19,7 +39,7 @@ templates:
     upgrade_from:
       - "ubuntu-16.04_k8-1.16_weave-2.6.0"
       - "ubuntu-16.04_k8-1.17_weave-2.6.0"
-  - 
+  -
     compute_policy: ""
     cpu: 2
     deprecated: false
@@ -39,7 +59,7 @@ templates:
     upgrade_from:
       - "ubuntu-16.04_k8-1.15_weave-2.5.2"
       - "ubuntu-16.04_k8-1.16_weave-2.6.0"
-  - 
+  -
     compute_policy: ""
     cpu: 2
     deprecated: false
@@ -58,7 +78,7 @@ templates:
     cni_version: "2.5.2"
     upgrade_from:
       - "ubuntu-16.04_k8-1.15_weave-2.5.2"
-  - 
+  -
     compute_policy: ""
     cpu: 2
     deprecated: false
